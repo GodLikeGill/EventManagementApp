@@ -1,14 +1,16 @@
 const form = document.querySelector('form');
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
-const passwordInput = document.querySelector('#password');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const name = nameInput.value;
-  const email = emailInput.value;
-  const password = passwordInput.value;
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
 
-  // TODO: add code to submit the registration data to the server
+  const emailValue = emailInput.value;
+  const passwordValue = passwordInput.value;
+
+  localStorage.setItem('email', emailValue);
+  localStorage.setItem('password', passwordValue);
+
+  window.location.href = 'main.html';
 });

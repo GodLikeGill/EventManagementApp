@@ -1,51 +1,61 @@
 body {
-    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 36px;
-    color: #333;
-  }
-  
-  #events-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .event-box {
-    width: 48%;
-    padding: 20px;
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .event-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .event-description {
-    margin-bottom: 10px;
-    color: #666;
-  }
-  
-  .event-location {
-    margin-bottom: 10px;
-    color: #666;
-  }
-  
-  .event-date-time {
-    font-size: 16px;
-    color: #666;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.event-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.event-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #44a047;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.event-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  margin-bottom: 10px;
+}
+
+.event-location {
+  margin-bottom: 10px;
+}
+
+.event-date-time {
+  margin-top: 10px;
+}

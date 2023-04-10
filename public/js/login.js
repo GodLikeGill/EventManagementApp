@@ -1,16 +1,20 @@
 const form = document.querySelector('form');
-const emailInput = document.querySelector('#email');
-const passwordInput = document.querySelector('#password');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const email = emailInput.value;
-  const password = passwordInput.value;
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
 
-  if (email === 'jatin@gmail.com' && password === 'jatin') {
+  const emailValue = emailInput.value;
+  const passwordValue = passwordInput.value;
+
+  const storedEmail = localStorage.getItem('email');
+  const storedPassword = localStorage.getItem('password');
+
+  if (emailValue === storedEmail && passwordValue === storedPassword) {
     window.location.href = 'main.html';
   } else {
-    alert('Incorrect username or password. Please try again.');
+    alert('Incorrect email or password. Please try again.');
   }
 });
